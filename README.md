@@ -13,7 +13,7 @@
   - [Локально](#computer-локальный-запуск)
 - Отчеты:
   - [Allure](#bar_chart-отчеты-о-прохождении-тестов-доступны-в-allure)
-  - [BrowserStack](#)
+  - [BrowserStack](#-browserstack)
   - [Telegram](#-telegram)
   - [Email](#email-email)
 - [Allure TestOps](#briefcase-проект-интегрирован-с-allure-testops)
@@ -125,7 +125,7 @@ allure serve .\allure-results
 
 <img src="media/screenshots/telegram.jpg" alt="Telegram"/>
 
-### Email
+### :email: Email
 
 Настроена отправка отчета на электронную почту
 
