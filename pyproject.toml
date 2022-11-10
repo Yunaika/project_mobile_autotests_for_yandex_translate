@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mobile_autotests_for_yandex_translate"
+version = "0.1.0"
+description = "Mobile end-to-end testing Yandex translate on Android Studio and bbrowserstack with selene + appium + pytest"
+authors = ["Julia Ivanova <murova47@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.2.0"
+allure-pytest = "^2.11.1"
+selene = {version = "^2.0.0-beta.14", allow-prereleases = true}
+Appium-Python-Client = "^2.7.1"
+pytest-xdist = "^2.5.0"
+requests = "^2.28.1"
+pydantic = "^1.10.2"
+python-dotenv = "^0.21.0"
+
+[tool.pytest.ini_options]
+addopts="-vv --alluredir=allure-results --clean-alluredir"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
