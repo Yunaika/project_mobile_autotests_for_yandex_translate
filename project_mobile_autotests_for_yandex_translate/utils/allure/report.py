@@ -1,10 +1,8 @@
 import sys
 import types
 from functools import wraps
-
 from allure_commons.utils import func_parameters
 from allure_commons._allure import StepContext
-
 from project_mobile_autotests_for_yandex_translate.utils.utils import humanify_class, humanify
 
 

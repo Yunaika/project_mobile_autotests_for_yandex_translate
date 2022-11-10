@@ -1,13 +1,12 @@
 import allure
 import allure_commons
 import pytest
+import config
 from _pytest.nodes import Item
 from _pytest.runner import CallInfo
 from selene.support.shared import browser
 from selene import support
 from appium import webdriver
-
-import config
 from project_mobile_autotests_for_yandex_translate import utils
 
 

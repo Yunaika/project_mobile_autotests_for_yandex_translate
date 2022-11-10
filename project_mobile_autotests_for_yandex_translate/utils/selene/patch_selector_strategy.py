@@ -1,12 +1,13 @@
+"""
+An example of extending Selene, specific to mobile context by Iakiv Kramarenko
+"""
+import re
+import config
 from typing import Union, Tuple
-
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import Browser
 from selene.core.entity import Element, Collection
 from selenium.webdriver.common.by import By
-import re
-
-import config
 from project_mobile_autotests_for_yandex_translate.utils.python import monkey
 
 

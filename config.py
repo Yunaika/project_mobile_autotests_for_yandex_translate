@@ -1,21 +1,16 @@
 import datetime
-from datetime import date
-
 import pydantic
+from datetime import date
 from appium.options.android import UiAutomator2Options
 from typing import Literal, Optional
-
-from dotenv import load_dotenv
-
 from project_mobile_autotests_for_yandex_translate import utils
 
-from pathlib import Path
 
 EnvContext = Literal['local', 'browserstack']
 
 
 class Settings(pydantic.BaseSettings):
-    context: EnvContext = 'browserstack'
+    context: EnvContext = 'local'
 
     # --- Appium Capabilities ---
     platformName: str = None
@@ -86,8 +81,6 @@ class Settings(pydantic.BaseSettings):
         factory method to init Settings with values from corresponding .env file
         """
         asked_or_current = env or cls().context
-        # env_file = Path(f'config.{asked_or_current}.env');
-        # load_dotenv(env_file)
         return cls(
             _env_file=utils.file.abs_path_from_project(f'config.{asked_or_current}.env')
         )

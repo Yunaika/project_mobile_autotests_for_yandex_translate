@@ -1,6 +1,5 @@
 from selene import have, be
 from selene.support.shared import browser
-
 from project_mobile_autotests_for_yandex_translate.utils.allure.report import step
 
 
